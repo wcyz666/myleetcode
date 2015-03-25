@@ -1,0 +1,8 @@
+#Ignore all by default
+*
+#Except LeetCode
+!LeetCode*
+!LeetCode*/*
+!LeetCode*/*/*
+#Ignore All bin files
+LeetCode[0-9]*/bin/*
