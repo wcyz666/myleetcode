@@ -117,37 +117,24 @@ public class Leetcode1 {
 		}
     }*/
     
-    public int[] twoSum(int[] numbers, int target) {
-		//index Map
-        Map<Integer, Short> indexMap = new HashMap<>();
-        int x;
-		//hash value and indices
-		for (short i = 0; i < numbers.length; i++){
-		    x = numbers[i];
-			if (indexMap.get(x) == null)
-				indexMap.put(x, i);
-			else {
-				if (target == x * 2){
-					return new int[] {indexMap.get(x) + 1, i + 1};
-				}
-			}
-		}
+	public int[] twoSum(int[] numbers, int target) {  
 
-		for (short i = 0; i < numbers.length; i++){
-		    x = numbers[i];
-			if (target != x * 2 && indexMap.get(target - x) != null){
-				int int1 = indexMap.get(x) + 1;
-				int int2 = indexMap.get(target - x) + 1;
-				if (int1 > int2)
-					return new int[] {int2, int1};
-				else {
-					return new int[] {int1, int2};
-				}
-			}
-		}
-		
-		return null;
-    }
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();  
+        int n = numbers.length;  
+        int[] result = new int[2];  
+        for (int i = 0; i < numbers.length; i++)  
+        {  
+            if (map.containsKey(target - numbers[i])) {  
+                result[0] = map.get(target-numbers[i]) + 1;  
+                result[1] = i + 1;  
+                break;  
+            }  
+            else {  
+                map.put(numbers[i], i);  
+            }  
+        }  
+        return result;  
+    }  
     
     
     public static void main(String[] args) {
