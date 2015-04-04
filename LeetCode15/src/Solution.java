@@ -100,7 +100,7 @@ public class Solution {
     		return lists;
     	}
     	
-    	for (int i = 0; i < num.length && num[i] <= 0; i++){
+    	for (int i = 0; i < num.length - 2 && num[i] <= 0; i++){
     		for (int j = i + 1; j < num.length - 1; j++){
     			if (num[i] + num[j] > 0) break;
     			
@@ -111,11 +111,11 @@ public class Solution {
     				list.add(0 - num[i] - num[j]);
     				lists.add(list);
     			}
-    			while (j < num.length && num[j] == num[j + 1]){
+    			while (j < num.length - 1 && num[j] == num[j + 1]){
     				j++;
     			}
     		}
-    		while (i < num.length && num[i] == num[i + 1]){
+    		while (i < num.length - 1 && num[i] == num[i + 1]){
     			i++;
     		}
     	}
