@@ -1,4 +1,17 @@
 public class Solution {
+/*	
+ * A better solution using Recursion
+ * 
+ * 
+ * public ListNode swapPairs(ListNode head) {
+        if ((head == null)||(head.next == null))
+            return head;
+        ListNode n = head.next;
+        head.next = swapPairs(head.next.next);
+        n.next = head;
+        return n;
+    }*/
+	
     public ListNode swapPairs(ListNode head) {
         ListNode front, mid, back, root, rear;
         root = new ListNode(-1);
