@@ -2,11 +2,11 @@
 
 public class Solution {
 	
-	public int reverse(int x)
-	{
+	
 /*	  
  * A better solution
- * 
+ * public int reverse(int x)
+	{
  *   int result = 0;
 
 	    while (x != 0)

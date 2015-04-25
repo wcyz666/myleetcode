@@ -11,6 +11,14 @@ import java.util.List;
  * }
  */
 public class Solution {
+	
+	class TreeNode {
+	      int val;
+	      TreeNode left;
+	      TreeNode right;
+	      TreeNode(int x) { val = x; }
+	  }
+	
     public boolean isValidBST(TreeNode root) {
         List<Integer> list = new LinkedList<>();
         preorderTra(list, root);
