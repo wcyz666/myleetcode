@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(70/184)
+目前进度(71/184)
 
 
 LeetCode做题笔记
@@ -280,3 +280,6 @@ DFS，每次加最后一个节点即可。
 
 68. 颠倒句子里单词(LeetCode151, medium)
 先split，再reverse，最后join
+
+69. 给一个target，计算数的路径和等于target的路径(LeetCode113, medium)
+一层一层的递归即可，路上要记录节点
