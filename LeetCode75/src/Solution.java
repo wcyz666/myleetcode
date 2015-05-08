@@ -1,21 +1,23 @@
 public class Solution {
+	
+/*    void sortColors(int A[], int n) {
+        int second=n-1, zero=0;
+        for (int i=0; i<=second; i++) {
+            while (A[i]==2 && i<second) swap(A[i], A[second--]);
+            while (A[i]==0 && i>zero) swap(A[i], A[zero++]);
+        }
+    }*/
     public void sortColors(int[] A) {
-        for (int i = 0, start = -1, last = A.length; i < last; i++){
-            if (A[i] == 0) {
-                ++start;
-                int tmp = A[start];
-                A[start] = A[i];
-                A[i] = tmp;
-            }
-            else if (A[i] == 2) {
-                --last;
-                int tmp = A[last];
-                A[last] = A[i];
-                A[i] = tmp;
-            }
+        int[] countArray = new int[] {0, 0, 0};
+        for (int i = 0, last = A.length; i < last; i++){
+            countArray[A[i]]++;
         }   
+        int j = 0;
+        for (int i = 0; i < countArray[0]; i++, j++)
+            A[j] = 0;
+        for (int i = 0; i < countArray[1]; i++, j++)
+            A[j] = 1;   
+        for (int i = 0; i < countArray[2]; i++, j++)
+            A[j] = 2;
     }
-    public static void main(String[] args) {
-		new Solution().sortColors(new int[1,2,0]{);
-	}
 }
