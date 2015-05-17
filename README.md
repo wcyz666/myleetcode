@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(96/184)
+目前进度(98/184)
 
 
 LeetCode做题笔记
@@ -382,3 +382,8 @@ The number of ways decoding "12" is 2.
 
 95. 给一个数组，找到peak element(LeetCode162, medium)
 二分搜索，要求不停地往高处，往大的元素方向走就好了
+
+96. 今天冲关的只能拿easy凑数了。。。给一个数组里的数+1(LeetCode66, medium)
+太简单不说了
+
+97. 
