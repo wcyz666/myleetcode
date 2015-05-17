@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(92/184)
+目前进度(93/184)
 
 
 LeetCode做题笔记
@@ -355,3 +355,18 @@ O(N)时间 + O(1)空间的做法：如果a[i] = i,不动；否则a[i]和a[a[i]]�
 90. 把给定字符串按给定的字典切分(LeetCode139, medium)
 方法一：效率奇差，先给Set按字符串长度排序，再挨个匹配。。。不行，超时
 方法二：DP。我的动归掌握的还是不好，总是没法只考虑一个阶段。。。A[i] = A[j] && wordDict.contains(s.substring(j, i))
+
+91. (LeetCode91, medium)
+A message containing letters from A-Z is being encoded to numbers using the following mapping:
+
+'A' -> 1
+'B' -> 2
+...
+'Z' -> 26
+Given an encoded message containing digits, determine the total number of ways to decode it.
+
+For example,
+Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
+
+The number of ways decoding "12" is 2.
+比较基本的DP问题，如果当前只能单蹦，那就和上一个分割的一样；如果可以和上一个组合，那就上一个加上上个。0的情况分开讨论
