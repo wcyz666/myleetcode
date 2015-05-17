@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(94/184)
+目前进度(95/184)
 
 
 LeetCode做题笔记
@@ -373,3 +373,6 @@ The number of ways decoding "12" is 2.
 
 92. 曲里拐弯得遍历一棵树(LeetCode103, medium)
 曲里拐弯得BFS遍历就好
+
+93. 树迭代器，要求next返回下一个最小元素(LeetCode173, medium)
+其实就是把中序遍历拆开。
