@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(99/184)
+目前进度(100/184)
 
 
 LeetCode做题笔记
@@ -383,11 +383,11 @@ The number of ways decoding "12" is 2.
 95. 给一个数组，找到peak element(LeetCode162, medium)
 二分搜索，要求不停地往高处，往大的元素方向走就好了
 
-96. 今天冲关的只能拿easy凑数了。。。给一个数组里的数+1(LeetCode66, medium)
+96. 今天冲关的只能拿easy凑数了。。。给一个数组里的数+1(LeetCode66, easy)
 太简单不说了
 
 97. 给一个数组表示股票价格，求最大利润，可买卖多次(LeetCode121, medium)
 这个题是逗我的吗。。。easy都不够格诶
 
-98. 
+98. 飞升了！！！飞升了！！！(LeetCode171, easy)
 
