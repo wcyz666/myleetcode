@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(95/184)
+目前进度(96/184)
 
 
 LeetCode做题笔记
@@ -376,3 +376,6 @@ The number of ways decoding "12" is 2.
 
 93. 树迭代器，要求next返回下一个最小元素(LeetCode173, medium)
 其实就是把中序遍历拆开。
+
+94. 给一个数组表示股票价格，求最大利润(LeetCode121, medium)
+后面的元素跟前面的作差，然后求新数组的最大子序列和即可
