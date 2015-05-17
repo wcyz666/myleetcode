@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(93/184)
+目前进度(94/184)
 
 
 LeetCode做题笔记
@@ -370,3 +370,6 @@ Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 
 The number of ways decoding "12" is 2.
 比较基本的DP问题，如果当前只能单蹦，那就和上一个分割的一样；如果可以和上一个组合，那就上一个加上上个。0的情况分开讨论
+
+92. 曲里拐弯得遍历一棵树(LeetCode103, medium)
+曲里拐弯得BFS遍历就好
