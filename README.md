@@ -379,3 +379,6 @@ The number of ways decoding "12" is 2.
 
 94. 给一个数组表示股票价格，求最大利润(LeetCode121, medium)
 后面的元素跟前面的作差，然后求新数组的最大子序列和即可
+
+95. 给一个数组，找到peak element(LeetCode162, medium)
+二分搜索，要求不停地往高处，往大的元素方向走就好了
