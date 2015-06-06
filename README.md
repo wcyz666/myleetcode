@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(101/184)
+目前进度(102/184)
 
 
 LeetCode做题笔记
@@ -393,3 +393,6 @@ The number of ways decoding "12" is 2.
 
 99. 克隆一个无向图(LeetCode133, medium)
 BFS+HashMap即可
+
+100. 好长时间没刷了。。。找到一个没排序的数组里的第K大的数(LeetCode215, medium)
+随机化快排的partition部分+递归。算法导论的选择算法
