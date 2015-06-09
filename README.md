@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(102/184)
+目前进度(103/223)
 
 
 LeetCode做题笔记
@@ -396,3 +396,6 @@ BFS+HashMap即可
 
 100. 好长时间没刷了。。。找到一个没排序的数组里的第K大的数(LeetCode215, medium)
 随机化快排的partition部分+递归。算法导论的选择算法
+
+101. 找到一个未排序的数组里的最长连续整数数列(LeetCode, medium)
+用hashmap，但是相邻的integer都用链表连起来，最后算链表长度
