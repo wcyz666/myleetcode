@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(120/208)
+目前进度(121/208)
 
 
 LeetCode做题笔记
@@ -455,3 +455,7 @@ For i > 0 and j > 0: if matrix[i][j] = 0, P[i][j] = 0; if matrix[i][j] = 1, P[i]
 
 118. 删除排好序的链表里的重复元素(LeetCode83, easy)
 太简单了不说了
+
+119. 在链表里删除指定的元素(LeetCode203, easy)
+先找到再删
+
