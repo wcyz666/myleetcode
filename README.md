@@ -446,3 +446,6 @@ O(N)的空间复杂度，用栈实现的，不够好。O(1)的方法在源码里
 P[0][j] = matrix[0][j] 
 P[i][0] = matrix[i][0] 
 For i > 0 and j > 0: if matrix[i][j] = 0, P[i][j] = 0; if matrix[i][j] = 1, P[i][j] = min(P[i - 1][j], P[i][j - 1], P[i - 1][j - 1]) + 1.
+
+116. 把一个二叉树展平成链表(LeetCode114, medium)
+先把右子树放到左子树最右边，再把左子树转到右子树，然后下降一层。循环即可
