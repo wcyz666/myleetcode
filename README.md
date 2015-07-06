@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(125/208)
+目前进度(126/208)
 
 
 LeetCode做题笔记
@@ -469,5 +469,13 @@ datalab原题，用x & (x - 1)最左边置0然后判断是不是0
 122. 把一个罗马数字转换成整数(LeetCode13, easy)
 找特定字符串加起来就好了
 
-123. house robber，不能计算连续两个(LeetCode213, medium)
+123. house robber，不能计算连续两个，圆圈(LeetCode213, medium)
 这次是圆圈，把robber I 的算法跑两遍就好了，一次从1到n，一次从0到n-1
+
+124. house robber，不能计算连续两个，直线(LeetCode198, easy)
+状态转移方程
+result[0] = nums[0];
+result[1] = Math.max(nums[0], nums[1]);
+result[i] = Math.max(result[i - 1], result[i - 2] + nums[i]);
+
+可以把空间复杂度降低到O(1), 代码在源代码里。
