@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(123/208)
+目前进度(125/208)
 
 
 LeetCode做题笔记
@@ -465,3 +465,9 @@ For i > 0 and j > 0: if matrix[i][j] = 0, P[i][j] = 0; if matrix[i][j] = 1, P[i]
 
 121. 判断一个数是不是2的幂(LeetCode231, easy)
 datalab原题，用x & (x - 1)最左边置0然后判断是不是0
+
+122. 把一个罗马数字转换成整数(LeetCode13, easy)
+找特定字符串加起来就好了
+
+123. house robber，不能计算连续两个(LeetCode213, medium)
+这次是圆圈，把robber I 的算法跑两遍就好了，一次从1到n，一次从0到n-1
