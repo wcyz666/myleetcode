@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(126/208)
+目前进度(127/231)
 
 
 LeetCode做题笔记
@@ -479,3 +479,6 @@ result[1] = Math.max(nums[0], nums[1]);
 result[i] = Math.max(result[i - 1], result[i - 2] + nums[i]);
 
 可以把空间复杂度降低到O(1), 代码在源代码里。
+
+125. 反转链表(LeetCode206, easy)
+正规的方法在源代码里
