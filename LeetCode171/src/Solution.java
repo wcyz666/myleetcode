@@ -1,9 +1,15 @@
+
+/*
+ * return n == 0 ? "" : convertToTitle(--n / 26) + (char)('A' + (n % 26));
+ */
 public class Solution {
-    public int titleToNumber(String s) {
-        int result = 0;
-        for (int i = 0, length = s.length(); i < length; i++) {
-            result = (s.charAt(i) - 'A' + 1) + result * 26;
+    public String convertToTitle(int n) {
+        StringBuilder sb = new StringBuilder();
+        while (n > 0) {
+            n--;
+            sb.append((char)(n % 26 + 'A'));
+            n = n / 26;
         }
-        return result;
+        return sb.reverse().toString();
     }
 }

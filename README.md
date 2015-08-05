@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(128/231)
+目前进度(136/226)
 
 
 LeetCode做题笔记
@@ -487,3 +487,29 @@ result[i] = Math.max(result[i - 1], result[i - 2] + nums[i]);
 把之前10进制的算法拿来，10换成2，就是这么简单，就是这么任性！
 更好的方法在源代码里
 
+127. 删除某个链表里的节点，只有这个节点的引用(LeetCode237, easy)
+这个题太无语了。。。把下一个节点的值拷贝到这个节点，然后删掉下一个节点
+
+128. Product of Array Except Self(LeetCode238, medium)
+分别从头到尾，从尾到头遍历累乘，不能乘自己
+
+129. 求二叉搜索树的两个node的最低公共祖先(LeetCode235, easy)
+就是找一个节点，要么节点等于一个node的值，要么两个node的值在root的两边
+
+130. Summary Ranges (LeetCode228, easy)
+Given a sorted integer array without duplicates, return the summary of its ranges.
+For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
+这个太简单不说了·
+
+131. 判断一个链表是不是回文的(LeetCode234, easy)
+递归，然后头尾比较即可
+
+132. 求二叉树的两个node的最低公共祖先(LeetCode236, medium)
+我的方法：找两个node，然后用栈记录轨迹。比较轨迹即可
+别人的方法在源代码里
+
+133. 多数元素，找到出现次数大于2/3的元素(LeetCode229, medium)
+摩尔投票算法，但是结果要回去验证。。。
+
+134. 判断两个字符串是否属于字母乱序(leetCode242, easy)
+一个小写字母数组，s的字母++，t的字母--。看最后是不是所有的元素都是0
