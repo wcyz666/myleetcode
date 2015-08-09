@@ -1,6 +1,6 @@
 改天学学markdown。。。
 
-目前进度(141/235)
+目前进度(142/237)
 
 
 LeetCode做题笔记
@@ -531,3 +531,17 @@ For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 1. 遍历一遍list，复制每个节点，复制后的节点放在源节点的后面
 2. 遍历一遍list，拷贝random。如果random不是null，就让random指向后一个节点
 3. 遍历一遍list，摘出拷贝的节点
+
+140. 跳跃游戏(LeetCode55, medium)
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Determine if you are able to reach the last index.
+
+For example:
+A = [2,3,1,1,4], return true.
+
+A = [3,2,1,0,4], return false.
+
+我把它看成一个补充能量的游戏。前进一步消耗一个能量，如果到达的位置上能量更多，就能补充能量。就看能量能不能坚持到终点。
