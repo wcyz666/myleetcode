@@ -577,3 +577,6 @@ A = [3,2,1,0,4], return false.
 
 151. strStr() (LeetCode28, easy)
 一定要注意边界条件，面试的时候小心！
+
+152. 爬台阶 (LeetCode70, easy)
+就是斐波那契数列
