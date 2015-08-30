@@ -592,3 +592,18 @@ A = [3,2,1,0,4], return false.
 
 156. 比较版本号 (LeetCode165, easy)
 先split(Java的split要求正则表达式简直坑！)，然后一位一位比较。
+
+157. 给定一个值，判断二叉树从根到叶子的路径和有没有跟这个值相同的(LeetCode112, easy)
+递归即可
+
+158. 最长合法括号对 (LeetCode32, hard)
+我的方法无论如何都过不去倒数四个testcase。。。
+好的方法是O(N)用stack
+The workflow of the solution is as below.
+Scan the string from beginning to end.
+If current character is '(', push its index to the stack. If current character is ')' and the character at the index of the top of stack is '(', we just find a matching pair so pop from the stack. Otherwise, we push the index of ')' to the stack.
+After the scan is done, the stack will only contain the indices of characters which cannot be matched. Then let's use the opposite side - substring between adjacent indices should be valid parentheses.
+If the stack is empty, the whole input string is valid. Otherwise, we can scan the stack to get longest valid substring as described in step 3.
+
+159. 检测一个数独是不是合法的 (LeetCode36, easy)
+用位操作可以大大压缩占用的空间
