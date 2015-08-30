@@ -610,3 +610,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 160. 检测二叉树是否平衡(LeetCode110, easy)
 一边算depth一边检测平衡即可
+
+161. count and say(LeetCode38, easy)
+没啥好办法，一遍一遍循环来。
