@@ -607,3 +607,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 159. 检测一个数独是不是合法的 (LeetCode36, easy)
 用位操作可以大大压缩占用的空间
+
+160. 检测二叉树是否平衡(LeetCode110, easy)
+一边算depth一边检测平衡即可
