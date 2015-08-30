@@ -613,3 +613,10 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 161. count and say(LeetCode38, easy)
 没啥好办法，一遍一遍循环来。
+
+162. 链表交点(LeetCode160, easy)
+我的方法：两条链表过一遍，求长度，然后走到长度一样的地方，再过第二遍就好
+最高票的方法是：过一遍，到头了就换一条链过第二遍。如果有交点，一定会重复
+
+163. 检查一个string是否回文(LeetCode125, easy)
+先转lowercase，再看别的
