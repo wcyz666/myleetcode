@@ -638,3 +638,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 169. 输出二叉树路径最大值(LeetCode124, hard)
 这道题的难点，而且也是我花了大力气没有解决的就是怎么把局部子树的最大值传出去，最高票答案非常漂亮的解决了这个问题
+
+170. 映射字符串(LeetCode205, easy)
+两个Map，第一个用来看相同的字符是不是被映射到了相同的字符上，第二个用来看不同的字符偶没有被映射到相同的字符上
