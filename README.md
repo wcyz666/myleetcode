@@ -620,3 +620,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 163. 检查一个string是否回文(LeetCode125, easy)
 先转lowercase，再看别的
+
+164. 在一个横纵都排好序的矩阵里查找一个元素(LeetCode240, medium)
+经典的题目，关键是从右上角开始，一次移动一行或者一列
