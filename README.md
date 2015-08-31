@@ -641,3 +641,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 170. 映射字符串(LeetCode205, easy)
 两个Map，第一个用来看相同的字符是不是被映射到了相同的字符上，第二个用来看不同的字符偶没有被映射到相同的字符上
+
+171. 输出两个2D平面上的长方形的总共面积(LeetCode223, easy)
+找到最右边的左，最左边的右，最上面的下和最下面的上。围起来就是重合的部分
