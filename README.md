@@ -644,3 +644,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 171. 输出两个2D平面上的长方形的总共面积(LeetCode223, easy)
 找到最右边的左，最左边的右，最上面的下和最下面的上。围起来就是重合的部分
+
+172. 两个栈实现一个队列(LeetCode232, easy)
+最后一个简单。。。入队压入主栈，出队先看从栈空不空，空就压入所有主栈元素，否则直接弹出栈顶元素
