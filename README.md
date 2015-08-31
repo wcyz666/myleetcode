@@ -629,3 +629,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 166. ugly number(LeetCode263, easy)
 太简单不说了，注意不能有负数
+
+167. 输出杨辉三角第二行(LeetCode119, easy)
+输出了一半居然溢出了。。。后面一般组合数不要直接算，用前一半倒过来
