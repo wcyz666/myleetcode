@@ -1,4 +1,4 @@
-目前进度(158/237)
+目前进度(171/237)
 
 
 LeetCode做题笔记
@@ -636,3 +636,5 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 168. 输出二叉树的路径(LeetCode257, easy)
 注意path
 
+169. 输出二叉树路径最大值(LeetCode124, hard)
+这道题的难点，而且也是我花了大力气没有解决的就是怎么把局部子树的最大值传出去，最高票答案非常漂亮的解决了这个问题
