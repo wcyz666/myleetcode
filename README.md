@@ -626,3 +626,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 165. 输出杨辉三角(LeetCode118, easy)
 没啥好说的，注意边界条件
+
+166. ugly number(LeetCode263, easy)
+太简单不说了，注意不能有负数
