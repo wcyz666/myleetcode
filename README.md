@@ -504,7 +504,7 @@ For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 
 132. 求二叉树的两个node的最低公共祖先(LeetCode236, medium)
 我的方法：找两个node，然后用栈记录轨迹。比较轨迹即可
-别人的方法在源代码里
+别人的方法在源代码里 
 
 133. 多数元素，找到出现次数大于2/3的元素(LeetCode229, medium)
 摩尔投票算法，但是结果要回去验证。。。
@@ -647,3 +647,6 @@ If the stack is empty, the whole input string is valid. Otherwise, we can scan t
 
 172. 两个栈实现一个队列(LeetCode232, easy)
 最后一个简单。。。入队压入主栈，出队先看从栈空不空，空就压入所有主栈元素，否则直接弹出栈顶元素
+
+173. 求一个含有重复元素的数列的全排列(LeetCode47, medium)
+看了别人的答案。。。
