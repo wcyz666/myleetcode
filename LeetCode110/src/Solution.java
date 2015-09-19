@@ -1,28 +1,48 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
-    
-    class Result {
-        int depth;
-        boolean isBalanced;
-        
-        public Result(int depth, boolean isBalanced) {
-            this.depth = depth;
-            this.isBalanced = isBalanced;
+    public List<TreeNode> generateTrees(int n) {
+
+        return genTrees(1,n);
+    }
+
+    public List<TreeNode> genTrees (int start, int end)
+    {
+
+        List<TreeNode> list = new ArrayList<TreeNode>();
+
+        if(start>end)
+        {
+            list.add(null);
+            return list;
         }
+
+        if(start == end){
+            list.add(new TreeNode(start));
+            return list;
+        }
+
+        List<TreeNode> left,right;
+        for(int i=start;i<=end;i++)
+        {
+
+            left = genTrees(start, i-1);
+            right = genTrees(i+1,end);
+
+            for(TreeNode lnode: left)
+            {
+                for(TreeNode rnode: right)
+                {
+                    TreeNode root = new TreeNode(i);
+                    root.left = lnode;
+                    root.right = rnode;
+                    list.add(root);
+                }
+            }
+
+        }
+
+        return list;
     }
-    
-    public boolean isBalanced(TreeNode root) {
-        return _isBalanced(root).isBalanced;
-    }
-    
-    public Result _isBalanced(TreeNode root) {
-        if (root == null)
-            return new Result(0, true);
-            
-        Result lResult, rResult;
-        
-        lResult = _isBalanced(root.left);
-        rResult = _isBalanced(root.right);
-            
-        return new Result(Math.max(lResult.depth, rResult.depth) + 1, lResult.isBalanced && rResult.isBalanced && Math.abs(lResult.depth - rResult.depth) <= 1);
-    } 
 }
