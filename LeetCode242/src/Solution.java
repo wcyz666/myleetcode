@@ -1,3 +1,8 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+
+
 public class Solution {
     public boolean isAnagram(String s, String t) {
         int[] array = new int[26];
@@ -11,6 +16,8 @@ public class Solution {
             if (array[i] != 0)
                 return false;
         }
+        List<String> list = new ArrayList<>();
         return true;
+        
     }
 }
